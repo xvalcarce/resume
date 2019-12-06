@@ -1,0 +1,177 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=2d002d]
+\definecolor[sectioncolor][h=ff00ff]
+\definecolor[rulecolor][h=990099]
+\definecolor[link][h=d699d6]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=link]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[10pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={Xavier Valcarce},reference={xavier-valcarce}]
+
+\startblockquote
+~ {\externalfigure[markdown/site.svg][width=0.10417in]}
+\useURL[url1][https://valcarce.fr][][valcarce.fr]\from[url1]
+{\externalfigure[markdown/git.svg][width=0.10417in]}
+\useURL[url2][https://gitlab.com/plut0n][][gitlab.com/plut0n]\from[url2]
+{\externalfigure[markdown/mail.svg][width=0.10417in]}
+\useURL[url3][mailto:xavier.valcarce@unibas.ch][][xavier.valcarce _at_
+unibas.ch]\from[url3] ~
+\stopblockquote
+
+\subsubsection[title={Interests},reference={interests}]
+
+Quantum Information Theory, Quantum Computing and Communication, Machine
+Learning, Numerical Analysis
+
+\subsubsection[title={Experiences},reference={experiences}]
+
+\startdescription{{\bf Sept.~2018 to present}}
+  {\bf Research Assistant} at {\em Quantum Optics Theory Group (Nicolas
+  Sangouard), University of Basel (Basel, Switzerland)}\crlf
+  {\bf Publications}:\crlf
+  - \useURL[url4][http://arxiv.org/pdf/1910.04606.pdf][][What is the
+  minimum CHSH score certifying that a state resembles the
+  singlet?]\from[url4] arXiv:1910.04606\crlf
+  {\bf Talks & Conferences}:\crlf
+  - DPG 2019 (Freiburg, DE) - Talk given on Device-independent
+  certification of an elementary quantum network\crlf
+  - Quantum Information 2019 (Benasque, ES) - Talk given about my Master
+  Thesis\crlf
+  - 8th NCCR QSIT Winter School (Arosa, CH)\crlf
+  {\bf Teaching}:\crlf
+  - Quantum Information Theory (FS 2019)\crlf
+  - Physics 4 - Introduction to quantum information and quantum optics
+  (SS 2019)\crlf
+  - Quantum Information and Computation (FS 2018)
+\stopdescription
+
+\startdescription{{\bf Apr.~2018 to Sept.~2018}}
+  {\bf Master Thesis} at {\em Quantum Information Theory Group (Antonio
+  Acin), ICFO (Barcelona, Spain)}\crlf
+  Master thesis project on {\em Machine Learning for Nonlocality
+  Detection in Multipartite System} under the supervision of Joseph
+  Bowles, Gabriel Senno and Antonio Acin.\crlf
+  {\bf Publication} :
+  \useURL[url5][https://valcarce.fr/physics/master_thesis.pdf][][thesis
+  available here]\from[url5]
+\stopdescription
+
+\startdescription{{\bf Jun.~2017 to Jul.~2017}}
+  {\bf Master Project} at {\em Quantum Correlations Group (Nicolas
+  Brunner), University of Geneva, (Geneva, Switzerland)}\crlf
+  Summer internship on {\em Semi-Device Independent Quantum Random
+  Number Generator}, under the supervision of Jonatan Bohr Brask and
+  Nicolas Brunner.\crlf
+  {\bf Publication} :
+  \useURL[url6][https://valcarce.fr/physics/qrng.pdf][][internship
+  report available here]\from[url6]
+\stopdescription
+
+\subsubsection[title={Education},reference={education}]
+
+\startdescription{{\bf 2016 to 2018}}
+  {\bf Master in Subatomic Physics}, pass with merit Claude Bernard
+  University, Lyon, France
+\stopdescription
+
+\startdescription{{\bf 2013 to 2016}}
+  {\bf Bachelor in Physics}, pass with merit Claude Bernard University,
+  Lyon, France\crlf
+  {\bf Erasmus+} (FS 2015), University of Oulu, Oulu, Finland
+\stopdescription
+
+\subsubsection[title={Technical Skills and
+Knowledge},reference={technical-skills-and-knowledge}]
+
+\startitemize[packed]
+\item
+  {\bf Physics}:
+  \startitemize[packed]
+  \item
+    Quantum Information, Quantum Mechanics, Quantum Optics
+  \item
+    Particle Physics, Nuclear Physics, Standard Model 
+  \stopitemize
+\item
+  {\bf Programming}:
+  \startitemize[packed]
+  \item
+    Python : Optimization (SDP, LP, \ldots{}), machine learning
+    (Pytorch), numerical analysis
+  \item
+    Julia : Optimization (SDP, LP, \ldots{}), numerical analysis
+  \item
+    Mathematica
+  \item
+    Bash : scripting, software developpement
+  \item
+    C++
+  \item
+    Latex, Markdown, HTML/CSS, \ldots{}
+  \stopitemize
+\stopitemize
+
+\stoptext

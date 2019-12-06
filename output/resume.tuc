@@ -1,0 +1,492 @@
+local utilitydata = { }
+
+utilitydata.comment={
+ ["escape"]="[===[ ... ]===]",
+ ["file"]="resume",
+ ["format"]="cont-en",
+ ["stamp"]="2019.03.21 21:39",
+ ["version"]=1.31,
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.variables then utilitydata.job.variables = { } end
+
+utilitydata.job.variables.checksums={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.variables then utilitydata.job.variables = { } end
+
+utilitydata.job.variables.collected={
+ ["macros"]={},
+ ["randomseed"]=0.57858948921785,
+ ["sectionblockorder"]={},
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.structure then utilitydata.job.structure = { } end
+
+utilitydata.job.structure.collected={
+ ["branches"]={},
+ ["name"]="",
+ ["type"]="text",
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.positions then utilitydata.job.positions = { } end
+
+utilitydata.job.positions.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.passes then utilitydata.job.passes = { } end
+
+utilitydata.job.passes.collected={
+ ["itemgroup:itemize:1"]={
+  { 2, 0 },
+  { 6, 0 },
+ },
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.datasets then utilitydata.job.datasets = { } end
+
+utilitydata.job.datasets.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.pagestates then utilitydata.job.pagestates = { } end
+
+utilitydata.job.pagestates.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.specials then utilitydata.structures.specials = { } end
+
+utilitydata.structures.specials.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.sections then utilitydata.structures.sections = { } end
+
+utilitydata.structures.sections.collected={
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["hidenumber"]=true,
+  ["language"]="en",
+  ["numbers"]=1,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["hidenumber"]=true,
+  ["language"]="en",
+  ["numbers"]=2,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["hidenumber"]=true,
+  ["language"]="en",
+  ["numbers"]=3,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["hidenumber"]=true,
+  ["language"]="en",
+  ["numbers"]=4,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+ {
+  ["block"]="bodypart",
+  ["conversionset"]="default",
+  ["hidenumber"]=true,
+  ["language"]="en",
+  ["numbers"]=5,
+  ["separatorset"]="default",
+  ["set"]="all",
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.counters then utilitydata.structures.counters = { } end
+
+utilitydata.structures.counters.collected={
+ ["chemical"]={
+  { 0 },
+ },
+ ["combination"]={
+  { 0 },
+ },
+ ["endnote"]={
+  { 0 },
+ },
+ ["figure"]={
+  { 0 },
+ },
+ ["footnote"]={
+  { 0 },
+ },
+ ["formula"]={
+  { 0 },
+ },
+ ["graphic"]={
+  { 0 },
+ },
+ ["intermezzo"]={
+  { 0 },
+ },
+ ["itemgroup:itemize"]={
+  { 0, 2 },
+  { 0, 2, 0, 6 },
+ },
+ ["linenote"]={
+  { 0 },
+ },
+ ["paragraph"]={
+  { 0 },
+ },
+ ["realpage"]={
+  { 1 },
+ },
+ ["subpage"]={
+  { 1 },
+ },
+ ["table"]={
+  { 0 },
+ },
+ ["userpage"]={
+  { 1 },
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.lists then utilitydata.structures.lists = { } end
+
+utilitydata.structures.lists.collected={
+ {
+  ["metadata"]=6,
+  ["numberdata"]=7,
+  ["references"]={
+   ["block"]="bodypart",
+   ["internal"]=1,
+   ["realpage"]=1,
+   ["reference"]="xavier-valcarce",
+   ["section"]=1,
+  },
+  ["titledata"]={
+   ["label"]="section",
+   ["title"]="Xavier Valcarce",
+  },
+ },
+ {
+  ["metadata"]=8,
+  ["numberdata"]=9,
+  ["references"]={
+   ["block"]="bodypart",
+   ["internal"]=2,
+   ["realpage"]=1,
+   ["reference"]="interests",
+   ["section"]=2,
+  },
+  ["titledata"]={
+   ["label"]="subsubsection",
+   ["title"]="Interests",
+  },
+ },
+ {
+  ["metadata"]=8,
+  ["numberdata"]=10,
+  ["references"]={
+   ["block"]="bodypart",
+   ["internal"]=3,
+   ["realpage"]=1,
+   ["reference"]="experiences",
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["label"]="subsubsection",
+   ["title"]="Experiences",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["references"]={
+   ["internal"]=4,
+   ["order"]=1,
+   ["realpage"]=1,
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["bookmark"]="{\\bf Sept. 2018 to present}",
+   ["title"]="{\\bf Sept.~2018 to present}",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["references"]={
+   ["internal"]=5,
+   ["order"]=2,
+   ["realpage"]=1,
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["bookmark"]="{\\bf Apr. 2018 to Sept. 2018}",
+   ["title"]="{\\bf Apr.~2018 to Sept.~2018}",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["references"]={
+   ["internal"]=6,
+   ["order"]=3,
+   ["realpage"]=1,
+   ["section"]=3,
+  },
+  ["titledata"]={
+   ["bookmark"]="{\\bf Jun. 2017 to Jul. 2017}",
+   ["title"]="{\\bf Jun.~2017 to Jul.~2017}",
+  },
+ },
+ {
+  ["metadata"]=8,
+  ["numberdata"]=12,
+  ["references"]={
+   ["block"]="bodypart",
+   ["internal"]=7,
+   ["realpage"]=1,
+   ["reference"]="education",
+   ["section"]=4,
+  },
+  ["titledata"]={
+   ["label"]="subsubsection",
+   ["title"]="Education",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["references"]={
+   ["internal"]=8,
+   ["order"]=4,
+   ["realpage"]=1,
+   ["section"]=4,
+  },
+  ["titledata"]={
+   ["title"]="{\\bf 2016 to 2018}",
+  },
+ },
+ {
+  ["metadata"]=11,
+  ["references"]={
+   ["internal"]=9,
+   ["order"]=5,
+   ["realpage"]=1,
+   ["section"]=4,
+  },
+  ["titledata"]={
+   ["title"]="{\\bf 2013 to 2016}",
+  },
+ },
+ {
+  ["metadata"]=8,
+  ["numberdata"]=13,
+  ["references"]={
+   ["block"]="bodypart",
+   ["internal"]=10,
+   ["realpage"]=1,
+   ["reference"]="technical-skills-and-knowledge",
+   ["section"]=5,
+  },
+  ["titledata"]={
+   ["label"]="subsubsection",
+   ["title"]="Technical Skills and Knowledge",
+  },
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.pages then utilitydata.structures.pages = { } end
+
+utilitydata.structures.pages.collected={
+ {
+  ["block"]="bodypart",
+  ["number"]=1,
+  ["numberdata"]=14,
+  ["prefixdata"]=15,
+  ["state"]="start",
+ },
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.references then utilitydata.structures.references = { } end
+
+utilitydata.structures.references.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.references then utilitydata.structures.references = { } end
+
+utilitydata.structures.references.referred={
+ { 1, 1 },
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.objects then utilitydata.job.objects = { } end
+
+utilitydata.job.objects.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.synonyms then utilitydata.structures.synonyms = { } end
+
+utilitydata.structures.synonyms.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.registers then utilitydata.structures.registers = { } end
+
+utilitydata.structures.registers.collected={
+}
+
+if not utilitydata.structures then utilitydata.structures = { } end
+if not utilitydata.structures.blocks then utilitydata.structures.blocks = { } end
+
+utilitydata.structures.blocks.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.files then utilitydata.job.files = { } end
+
+utilitydata.job.files.collected={
+}
+
+if not utilitydata.publications then utilitydata.publications = { } end
+
+utilitydata.publications.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.fileobjreferences then utilitydata.job.fileobjreferences = { } end
+
+utilitydata.job.fileobjreferences.collected={
+}
+
+if not utilitydata.job then utilitydata.job = { } end
+if not utilitydata.job.embedded then utilitydata.job.embedded = { } end
+
+utilitydata.job.embedded.collected={
+}
+
+utilitydata.job.packed={
+ ["index"]={
+  { 0, 0, 1 },
+  { 0, 0, 1, 0, 1 },
+  { 0, 0, 1, 0, 2 },
+  { 0, 0, 1, 0, 3 },
+  { 0, 0, 1, 0, 4 },
+  {
+   ["catcodes"]=8,
+   ["coding"]="tex",
+   ["increment"]="yes",
+   ["kind"]="section",
+   ["level"]=3,
+   ["name"]="section",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=1,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["catcodes"]=8,
+   ["coding"]="tex",
+   ["increment"]="yes",
+   ["kind"]="section",
+   ["level"]=5,
+   ["name"]="subsubsection",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=2,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=3,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["catcodes"]=8,
+   ["kind"]="construction",
+   ["level"]=5,
+   ["name"]="description",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=4,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["block"]="bodypart",
+   ["conversionset"]="default",
+   ["hidenumber"]=true,
+   ["language"]="en",
+   ["numbers"]=5,
+   ["separatorset"]="default",
+   ["set"]="all",
+  },
+  {
+   ["conversionset"]="pagenumber",
+  },
+  {
+   ["connector"]="–",
+   ["prefix"]="no",
+   ["set"]="part",
+  },
+ },
+ ["keys"]={
+  ["directives"]=true,
+  ["metadata"]=true,
+  ["numberdata"]=true,
+  ["numbers"]=true,
+  ["ownnumbers"]=true,
+  ["pagedata"]=true,
+  ["prefixdata"]=true,
+  ["processors"]=true,
+  ["sectiondata"]=true,
+  ["specification"]=true,
+ },
+ ["skip"]={
+  ["datasets"]=true,
+  ["positions"]=true,
+  ["userdata"]=true,
+ },
+ ["version"]=1.02,
+}
+
+return utilitydata
